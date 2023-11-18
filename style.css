@@ -31,3 +31,34 @@ a {
     text-decoration: none;
     border-radius: 3px;
 }
+
+/* Add this to your existing CSS file or create a new one if not present */
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #2980b9;
+}
