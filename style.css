@@ -31,3 +31,21 @@ a {
     text-decoration: none;
     border-radius: 3px;
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+}
+
+nav li {
+    margin: 0 15px;
+    text-align: right;
+}
+
+nav {
+    text-align: right;
+}
