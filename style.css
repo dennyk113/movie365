@@ -12,6 +12,34 @@ header, footer {
     text-align: center;
 }
 
+  /* Style for the search bar */
+  .search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#searchQuery {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 150px; /* Adjust the width as needed */
+}
+
+#searchButton {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
 main {
     padding: 1em;
 }
