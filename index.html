@@ -13,14 +13,16 @@
     <p><h2>One Click Movies Download</h2></p>
     </header>
     <main>
-      <section class="movie">
-           <h2>Sly 2023</h2>
-           <img src="assert/sly_2023.jpeg" alt="Sly Poster">
-            <p>Release Date: November 3, 2023</p>
-            <p>Genre: Documentary, Biography</p>
-            <p>Synopsis: The film Sly (2023) is a biographical documentary about the life and career of actor Sylvester Stallone. The film is directed by Thom Zimny and produced by Sean M. Stuart. It was released on October 27, 2023, in limited theaters and on November 3, 2023, on Netflix</p>
-            <a href="https://send.cm/i6fkocu5mzth">Download</a>
-        </section>
+        <section class="movie" id="sly2023">
+            <h2>Sly 2023</h2>
+            <img src="assert/sly_2023.jpeg" alt="Sly Poster">
+             <p>Release Date: November 3, 2023</p>
+             <p>Genre: Documentary, Biography</p>
+             <p class="short-synopsis">Synopsis: The film Sly (2023) is a biographical documentary about the life and career of actor Sylvester Stallone...</p>
+             <p class="full-synopsis">Synopsis: The film Sly (2023) is a biographical documentary about the life and career of actor Sylvester Stallone. The film is directed by Thom Zimny and produced by Sean M. Stuart. It was released on October 27, 2023, in limited theaters and on November 3, 2023, on Netflix</p>
+             <a href="https://send.cm/i6fkocu5mzth">Download</a>
+             <a href="#" onclick="toggleSynopsis('sly2023'); return false;">See More</a>
+         </section>
         
         <section class="movie">
            <h2>Monarch S01 E02</h2>
@@ -49,6 +51,8 @@
     </ul>
 </div>
         
+<script src="script.js"></script>
+
     </main>
     <footer>
         <p>&copy; 2023 One Click</p>
