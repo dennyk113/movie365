@@ -20,6 +20,9 @@ function searchMovies() {
     // Get all movie sections
     var movieSections = document.getElementsByClassName('movie');
 
+    // Flag to check if any matching movies are found
+    var foundMatchingMovies = false;
+
     // Iterate through movie sections and hide/show based on the search query
     for (var i = 0; i < movieSections.length; i++) {
         var movieTitle = movieSections[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
@@ -27,8 +30,15 @@ function searchMovies() {
 
         if (movieTitle.includes(searchQuery) || movieGenre.includes(searchQuery)) {
             movieSections[i].style.display = 'block'; // Show matching section
+            foundMatchingMovies = true;
         } else {
             movieSections[i].style.display = 'none'; // Hide non-matching section
         }
+    }
+
+    // Display a message if no matching movies are found
+    if (!foundMatchingMovies) {
+        alert("No movies found for the given search query.");
+        // You can also update the DOM to display a message on the webpage instead of using an alert.
     }
 }
